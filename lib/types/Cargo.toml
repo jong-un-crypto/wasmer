@@ -1,0 +1,27 @@
+[package]
+name = "wasmer-types-unc"
+version = "2.4.1"
+description = "Wasmer Common Types"
+categories = ["wasm", "no-std", "data-structures"]
+keywords = ["wasm", "webassembly", "types"]
+authors = ["Wasmer Engineering Team <engineering@wasmer.io>"]
+repository = "https://github.com/wasmerio/wasmer"
+license = "MIT OR Apache-2.0 WITH LLVM-exception"
+readme = "README.md"
+edition = "2018"
+
+[lib]
+name = "wasmer_types"
+
+[dependencies]
+thiserror = "1.0"
+indexmap = { version = "1.6" }
+rkyv = { version = "0.7.20" }
+
+[features]
+default = ["std"]
+std = []
+core = []
+
+# experimental / in-development features
+experimental-reference-types-extern-ref = []
