@@ -10,6 +10,8 @@ documentation = "https://docs.rs/wasmer-compiler-llvm/"
 license = "MIT"
 readme = "README.md"
 edition = "2018"
+publish = true
+
 
 [dependencies]
 wasmer-compiler = { path = "../compiler", version = "=2.4.1", package = "wasmer-compiler-unc", features = ["translator"] }

@@ -1,6 +1,6 @@
-[package]
+[workspace.package]
 name = "wasmer-workspace"
-version = "2.4.1"
+version = "0.0.0"
 description = "Wasmer workspace"
 authors = ["Wasmer Engineering Team <engineering@wasmer.io>"]
 repository = "https://github.com/wasmerio/wasmer"
@@ -8,6 +8,10 @@ license = "MIT"
 edition = "2018"
 publish = false
 autoexamples = false
+
+[workspace.metadata.workspaces]
+version = "2.4.1"
+
 
 [dependencies]
 wasmer = { version = "=2.4.1", path = "lib/api", package = "wasmer-unc" }
